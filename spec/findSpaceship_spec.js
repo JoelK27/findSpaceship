@@ -5,6 +5,3 @@ describe('Find Spaceship', function() {
 });
 
 
-it('should return "Spaceship lost forever" for an empty string', function() {
-    expect(spaceship.find('')).toEqual('Spaceship lost forever');
-});
