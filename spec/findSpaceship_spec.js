@@ -10,5 +10,9 @@ describe('Find Spaceship', function() {
     it('should return [7, 2] for a string containing "..........\n......X...\n"', function() {
         expect(spaceship.findSpaceship('..........\n......X...\n')).toEqual([7, 2]);
     });
+
+    it('should return [0, 0] for a string containing "X"', function() {
+        expect(spaceship.findSpaceship('X')).toEqual([0, 0]);
+    });
 });
     
