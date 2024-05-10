@@ -1,0 +1,10 @@
+"..........\n......X...\n" => findSpaceship(map) => [7,2]
+"..........\n..........\n => findSpaceship(map) => "Spaceship lost forever."
+"..........\n....A.....\n => findSpaceship(map) => "Spaceship lost forever."
+" " => findSpaceship(map) => "Spaceship lost forever."
+"X" findSpaceship(map) => [0,0]
+"....X.....\n.........X\n" findSpaceship(map) => return 0;
+"aosdjs" => findSpaceship(map) => return 0; //any string containing characters other than "\n", "X" or "." result in a fail
+
+
+
