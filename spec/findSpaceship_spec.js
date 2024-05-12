@@ -15,8 +15,11 @@ describe('Find Spaceship', function() {
         expect(spaceship.findSpaceship('X')).toEqual([0, 0]);
     });
 
-    it('should return "No Spaceship found." for a string containing "..........\n.........."', function() {
-        expect(spaceship.findSpaceship('..........\n..........')).toEqual('No Spaceship found.');
+    it('should return "Spaceship lost forever." for a string containing "..........\n.........."', function() {
+        expect(spaceship.findSpaceship('..........\n..........')).toEqual('Spaceship lost forever.');
+    });
+
+    it('should return "Spaceship lost forever." for a string containing "..........\n....A.....\n"', function() {
+        expect(spaceship.findSpaceship('..........\n....A.....\n')).toEqual('Spaceship lost forever.');
     });
 });
-    

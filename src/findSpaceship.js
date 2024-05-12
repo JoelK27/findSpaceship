@@ -16,5 +16,5 @@ Spaceship.prototype.findSpaceship = function(map) {
             }
         }
     }
-    return 'Spaceship lost forever';
+    return 'Spaceship lost forever.';
 }

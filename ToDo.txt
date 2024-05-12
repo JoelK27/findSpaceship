@@ -1,6 +1,6 @@
 "..........\n......X...\n" => findSpaceship(map) => [7,2] (done)
-"..........\n..........\n => findSpaceship(map) => "No Spaceship found."
-"..........\n....A.....\n => findSpaceship(map) => "Spaceship lost forever."
+"..........\n..........\n" => findSpaceship(map) => "Spaceship lost forever." (done)
+"..........\n....A.....\n" => findSpaceship(map) => "Spaceship lost forever." 
 " " => findSpaceship(map) => "Spaceship lost forever." (done)
 "X" findSpaceship(map) => [0,0] (done)
 "....X.....\n.........X\n" findSpaceship(map) => return 0; 
