@@ -11,10 +11,10 @@ Spaceship.prototype.findSpaceship = function(map) {
                     return [j + 1, i + 1];
                 }
             }
-            else if (i === lines.length - 1 && j === lines[i].length - 1) {
-                return 'No Spaceship found.';
+            else if (i === lines.length - 1 && j === lines[i].length - 1 || lines[i][j] != 'X' && lines[i][j] != '.' && lines[i][j] != '\n') {
+                return 'Spaceship lost forever.';
             }
         }
     }
-    return 'Spaceship lost forever.';
+    return 'Spaceship lost forever';
 }
