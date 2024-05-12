@@ -11,6 +11,9 @@ Spaceship.prototype.findSpaceship = function(map) {
                     return [j + 1, i + 1];
                 }
             }
+            else if (i === lines.length - 1 && j === lines[i].length - 1) {
+                return 'No Spaceship found.';
+            }
         }
     }
     return 'Spaceship lost forever';
