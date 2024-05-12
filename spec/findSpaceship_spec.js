@@ -14,5 +14,9 @@ describe('Find Spaceship', function() {
     it('should return [0, 0] for a string containing "X"', function() {
         expect(spaceship.findSpaceship('X')).toEqual([0, 0]);
     });
+
+    it('should return "No Spaceship found." for a string containing "..........\n.........."', function() {
+        expect(spaceship.findSpaceship('..........\n..........')).toEqual('No Spaceship found.');
+    });
 });
     
