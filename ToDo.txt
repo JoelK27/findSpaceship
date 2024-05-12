@@ -4,7 +4,7 @@
 " " => findSpaceship(map) => "Spaceship lost forever." (done)
 "X" findSpaceship(map) => [0,0] (done)
 "....X.....\n.........X\n" findSpaceship(map) => return 0; (done)
-"aosdjs" => findSpaceship(map) => return 0; //any string containing characters other than "\n", "X" or "." result in a fail
+"aosdjs" => findSpaceship(map) => "Spaceship lost forever."; //any string containing characters other than "\n", "X" or "." result in a fail
 
 
 

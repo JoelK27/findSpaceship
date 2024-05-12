@@ -4,7 +4,7 @@ describe('Find Spaceship', function() {
     });
     
     it('should return "Spaceship lost forever" for an empty string', function() {
-        expect(spaceship.findSpaceship('')).toEqual('Spaceship lost forever');
+        expect(spaceship.findSpaceship('')).toEqual('Spaceship lost forever.');
     });
 
     it('should return [7, 2] for a string containing "..........\n......X...\n"', function() {
@@ -27,7 +27,7 @@ describe('Find Spaceship', function() {
         expect(spaceship.findSpaceship('....X.....\n.........X\n')).toEqual(0);
     });
 
-    it('should return 0 for a string containing any other character than "\n", "X" or "."', function() {
-        expect(spaceship.findSpaceship('aosdjs')).toEqual(0);
+    it('should return "Spaceship lost forever" for a string containing any other character than "\n", "X" or "."', function() {
+        expect(spaceship.findSpaceship('aosdjs')).toEqual('Spaceship lost forever.');
     });
 });
